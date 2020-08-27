@@ -38,7 +38,10 @@ services:
     volumes:
       - ./genesis:/workspace
     ports:
+      - "30301:30303/tcp"
+      - "30301:30303/udp"
       - "18545:8545"
+      - "18546:8546"
     networks:
       - ethnet
     restart: on-failure
@@ -51,7 +54,10 @@ services:
     volumes:
       - ./others:/workspace
     ports:
+      - "30302:30303/tcp"
+      - "30302:30303/udp"
       - "28545:8545"
+      - "28546:8546"
     networks:
       - ethnet
     restart: on-failure
@@ -64,7 +70,10 @@ services:
     volumes:
       - ./others:/workspace
     ports:
+      - "30303:30303/tcp"
+      - "30303:30303/udp"
       - "8545:8545"
+      - "8546:8546"
     networks:
       - ethnet
     restart: on-failure
