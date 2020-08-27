@@ -1,0 +1,63 @@
+version: "3"
+
+services:
+  myMysqlNode:
+    image: zfq17876911936/chaojigongshi-mysql
+    container_name: myMysqlNode
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    networks:
+      - ethnet
+    restart: on-failure
+
+  myRedisNode:
+    image: redis
+    container_name: myRedisNode
+    networks:
+      - ethnet
+    restart: on-failure
+
+  myNode:
+    image: zfq17876911936/chaojigongshi-node
+    container_name: myNode
+    depends_on:
+      - myMysqlNode
+    networks:
+      - ethnet
+    restart: on-failure
+
+  myEthNode:
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
+    container_name: myEthNode
+    entrypoint: /workspace/init.sh
+    command: /workspace/mine.sh
+    volumes:
+      - ./genesis:/workspace
+    networks:
+      - ethnet
+    restart: on-failure
+
+  myEthOtherNode:
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
+    container_name: myEthOtherNode
+    entrypoint: /workspace/init.sh
+    command: /workspace/mine.sh
+    volumes:
+      - ./others:/workspace
+    networks:
+      - ethnet
+    restart: on-failure
+
+  myBtcpoolOtherNode:
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:btcpool-1.0
+    container_name: myBtcpoolOtherNode
+    entrypoint: /workspace/init.sh
+    command: /workspace/mine.sh
+    volumes:
+      - ./others:/workspace
+    networks:
+      - ethnet
+    restart: on-failure
+
+networks:
+  ethnet:
