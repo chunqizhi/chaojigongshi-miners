@@ -11,7 +11,7 @@
 	"chaoJiGongShiSubsidyHalvingFrequency": 0.5
     },
   "alloc"      : {},
-  "difficulty" : "0x400",
+  "difficulty" : "0x400000",
   "extraData"  : "",
   "gasLimit"   : "0x7A1200",
   "parentHash" : "0x0000000000000000000000000000000000000000000000000000000000000000",
