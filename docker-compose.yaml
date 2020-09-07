@@ -35,10 +35,6 @@ services:
   myEthNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
     container_name: myEthNode
-    entrypoint: /workspace/init.sh
-    command: /workspace/mine.sh
-    volumes:
-      - ./genesis:/workspace
     ports:
       - "30301:30303/tcp"
       - "30301:30303/udp"
@@ -51,10 +47,6 @@ services:
   myEthOtherNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
     container_name: myEthOtherNode
-    entrypoint: /workspace/init.sh
-    command: /workspace/mine.sh
-    volumes:
-      - ./others:/workspace
     ports:
       - "30302:30303/tcp"
       - "30302:30303/udp"
@@ -67,10 +59,6 @@ services:
   myBtcpoolOtherNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:btcpool-1.0
     container_name: myBtcpoolOtherNode
-    entrypoint: /workspace/init.sh
-    command: /workspace/mine.sh
-    volumes:
-      - ./others:/workspace
     ports:
       - "30303:30303/tcp"
       - "30303:30303/udp"
