@@ -35,6 +35,8 @@ services:
   myEthNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
     container_name: myEthNode
+    volumes:
+      - ./one:/data
     ports:
       - "30301:30303/tcp"
       - "30301:30303/udp"
@@ -47,6 +49,8 @@ services:
   myEthOtherNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
     container_name: myEthOtherNode
+    volumes:
+      - ./two:/data
     ports:
       - "30302:30303/tcp"
       - "30302:30303/udp"
@@ -59,6 +63,8 @@ services:
   myBtcpoolOtherNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:btcpool-1.0
     container_name: myBtcpoolOtherNode
+    volumes:
+      - ./three:/data
     ports:
       - "30303:30303/tcp"
       - "30303:30303/udp"
