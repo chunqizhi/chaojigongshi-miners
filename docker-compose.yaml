@@ -1,37 +1,6 @@
 version: "3"
 
 services:
-  myMysqlNode:
-    image: zfq17876911936/chaojigongshi-mysql
-    container_name: myMysqlNode
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-    ports:
-      - "3307:3306"
-    networks:
-      - ethnet
-    restart: on-failure
-
-  myRedisNode:
-    image: redis
-    container_name: myRedisNode
-    ports:
-      - "6379:6379"
-    networks:
-      - ethnet
-    restart: on-failure
-
-  myNode:
-    image: zfq17876911936/chaojigongshi-node:1.0
-    container_name: myNode
-    volumes:
-      - ./nodeConf:/conf
-    depends_on:
-      - myMysqlNode
-    networks:
-      - ethnet
-    restart: on-failure
-
   myEthNode:
     image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-1.0
     container_name: myEthNode
