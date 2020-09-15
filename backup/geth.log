@@ -1,0 +1,60 @@
+nohup: ignoring input
+INFO [09-15|01:46:08.000] Maximum peer count                       ETH=50 LES=0 total=50
+WARN [09-15|01:46:08.000] The flag --rpc is deprecated and will be removed in the future, please use --http 
+WARN [09-15|01:46:08.000] The flag --rpcaddr is deprecated and will be removed in the future, please use --http.addr 
+WARN [09-15|01:46:08.000] The flag --rpcport is deprecated and will be removed in the future, please use --http.port 
+WARN [09-15|01:46:08.000] The flag --rpcapi is deprecated and will be removed in the future, please use --http.api 
+WARN [09-15|01:46:08.000] The flag --rpcvhosts is deprecated and will be removed in the future, please use --http.vhosts 
+WARN [09-15|01:46:08.000] The flag --wsaddr is deprecated and will be removed in the future, please use --ws.addr 
+WARN [09-15|01:46:08.001] The flag --wsport is deprecated and will be removed in the future, please use --ws.port 
+WARN [09-15|01:46:08.001] The flag --wsorigins is deprecated and will be removed in the future, please use --ws.origins 
+INFO [09-15|01:46:08.001] Smartcard socket not found, disabling    err="stat /run/pcscd/pcscd.comm: no such file or directory"
+INFO [09-15|01:46:08.002] Set global gas cap                       cap=25000000
+INFO [09-15|01:46:08.006] Allocated trie memory caches             clean=256.00MiB dirty=256.00MiB
+INFO [09-15|01:46:08.006] Allocated cache and file handles         database=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth/chaindata cache=512.00MiB handles=524288
+INFO [09-15|01:46:08.090] Opened ancient database                  database=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth/chaindata/ancient
+INFO [09-15|01:46:08.090] Initialised chain configuration          config="{ChainID: 4857 Homestead: 0 DAO: <nil> DAOSupport: false EIP150: 0 EIP155: 0 EIP158: 0 Byzantium: 0 Constantinople: 0 Petersburg: <nil> Istanbul: <nil>, Muir Glacier: <nil>, YOLO v1: <nil>, Engine: unknown}"
+INFO [09-15|01:46:08.090] Disk storage enabled for ethash caches   dir=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth/ethash count=3
+INFO [09-15|01:46:08.090] Disk storage enabled for ethash DAGs     dir=/home/chunqizhi/.ethash count=2
+INFO [09-15|01:46:08.090] Initialising Ethereum protocol           versions="[65 64 63]" network=4857 dbversion=<nil>
+WARN [09-15|01:46:08.090] Upgrade blockchain database version      from=<nil> to=7
+INFO [09-15|01:46:08.091] Loaded most recent local header          number=0 hash="fa8b8e…399324" td=4194304 age=51y5mo1w
+INFO [09-15|01:46:08.091] Loaded most recent local full block      number=0 hash="fa8b8e…399324" td=4194304 age=51y5mo1w
+INFO [09-15|01:46:08.091] Loaded most recent local fast block      number=0 hash="fa8b8e…399324" td=4194304 age=51y5mo1w
+INFO [09-15|01:46:08.091] Regenerated local transaction journal    transactions=0 accounts=0
+INFO [09-15|01:46:08.110] Allocated fast sync bloom                size=512.00MiB
+INFO [09-15|01:46:08.110] Initialized fast sync bloom              items=0 errorrate=0.000 elapsed="61.941µs"
+INFO [09-15|01:46:08.110] Starting peer-to-peer node               instance=Geth/v1.9.19-stable-94eaaeb3/linux-amd64/go1.15
+INFO [09-15|01:46:08.123] New local node record                    seq=1 id=fe9256467579b0e7 ip=127.0.0.1 udp=30304 tcp=30304
+INFO [09-15|01:46:08.124] IPC endpoint opened                      url=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth.ipc
+INFO [09-15|01:46:08.124] HTTP server started                      endpoint=[::]:9545 cors= vhosts=*
+INFO [09-15|01:46:08.124] WebSocket enabled                        url=ws://[::]:9546
+INFO [09-15|01:46:08.127] Started P2P networking                   self=enode://eb5181085dad35271fa1315ed87d06ba026fd7fa06e1588d8c22ac4e6d62424d6c19db86f195655606404a14579ec8e22e1d056a403f3e49c875e2997229e7eb@127.0.0.1:30304
+INFO [09-15|01:46:09.337] New local node record                    seq=2 id=fe9256467579b0e7 ip=113.65.231.160 udp=1213  tcp=30304
+WARN [09-15|01:46:11.121] Served eth_coinbase                      reqid=3 t="23.441µs" err="etherbase must be explicitly specified"
+INFO [09-15|01:46:18.127] Looking for peers                        peercount=1 tried=101 static=0
+INFO [09-15|01:46:22.119] Block synchronisation started 
+INFO [09-15|01:46:22.230] Imported new state entries               count=1 elapsed="879.613µs" processed=1 pending=0 retry=0 duplicate=0 unexpected=0
+INFO [09-15|01:46:22.938] Imported new block headers               count=2 elapsed=687.800ms   number=2 hash="b2353a…8f96f9" age=1m47s
+INFO [09-15|01:46:22.939] Downloader queue stats                   receiptTasks=0 blockTasks=0 itemSize=108.21B throttle=8192
+INFO [09-15|01:46:22.939] Imported new chain segment               blocks=2 txs=0 mgas=0.000 elapsed="325.171µs" mgasps=0.000 number=2 hash="b2353a…8f96f9" age=1m47s    dirty=486.00B
+INFO [09-15|01:46:22.939] Fast sync complete, auto disabling 
+INFO [09-15|01:46:26.945] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=4.209ms     mgasps=0.000 number=3 hash="45ac13…f184d9" dirty=729.00B
+INFO [09-15|01:46:28.722] Looking for peers                        peercount=1 tried=99  static=1
+INFO [09-15|01:46:38.756] Looking for peers                        peercount=1 tried=14  static=1
+INFO [09-15|01:46:44.490] Imported new chain segment               blocks=1 txs=0 mgas=0.000 elapsed=3.899ms     mgasps=0.000 number=4 hash="4ce84a…1b03dd" dirty=972.00B
+INFO [09-15|01:46:49.042] Looking for peers                        peercount=1 tried=67  static=1
+INFO [09-15|01:46:50.685] Got interrupt, shutting down... 
+INFO [09-15|01:46:51.186] HTTP server stopped                      endpoint=[::]:9545
+INFO [09-15|01:46:51.687] HTTP server stopped                      endpoint=[::]:9546
+INFO [09-15|01:46:51.687] IPC endpoint closed                      url=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth.ipc
+INFO [09-15|01:46:51.771] Deallocated fast sync bloom              items=1 errorrate=0.000
+INFO [09-15|01:46:51.771] Ethereum protocol stopped 
+INFO [09-15|01:46:51.771] Transaction pool stopped 
+INFO [09-15|01:46:51.771] Writing cached state to disk             block=4 hash="4ce84a…1b03dd" root="8520b5…fa688b"
+INFO [09-15|01:46:51.771] Persisted trie from memory database      nodes=1 size=147.00B   time="73.763µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=4 livesize=441.00B
+INFO [09-15|01:46:51.771] Writing cached state to disk             block=3 hash="45ac13…f184d9" root="b88555…bc2257"
+INFO [09-15|01:46:51.771] Persisted trie from memory database      nodes=1 size=147.00B   time="14.648µs" gcnodes=0 gcsize=0.00B gctime=0s livenodes=3 livesize=294.00B
+INFO [09-15|01:46:51.771] Writing clean trie cache to disk         path=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth/triecache threads=4
+INFO [09-15|01:46:51.772] Persisted the clean trie cache           path=/home/chunqizhi/gopath/src/github.com/chunqizhi/chaojigongshi-miners/backup/data/geth/triecache elapsed="514.227µs"
+INFO [09-15|01:46:51.772] Blockchain stopped 
