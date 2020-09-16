@@ -1,10 +1,14 @@
 version: "3"
 services:
   myEthNode:
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
+    # image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
+    # 测试使用
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu
     container_name: myEthNode
     volumes:
-      - ./one:/data
+      - ./one/genesis:/genesis
+      # 生产使用
+      # - ./one/data:/data
     ports:
       - "30301:30303/tcp"
       - "30301:30303/udp"
@@ -15,10 +19,14 @@ services:
     restart: on-failure
 
   myEthOtherNode:
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
+    # image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
+    # 测试使用
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu
     container_name: myEthOtherNode
     volumes:
-      - ./two:/data
+      - ./two/genesis:/genesis
+      # 生产使用
+      # - ./two/data:/data
     ports:
       - "30302:30303/tcp"
       - "30302:30303/udp"
@@ -29,10 +37,14 @@ services:
     restart: on-failure
 
   myBtcpoolOtherNode:
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0
+    # image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0
+    # 测试使用
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0-ubuntu
     container_name: myBtcpoolOtherNode
     volumes:
-      - ./three:/data
+      - ./three/genesis:/genesis
+      # 生产使用
+      # - ./three/data:/data
     ports:
       - "30303:30303/tcp"
       - "30303:30303/udp"

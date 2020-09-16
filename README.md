@@ -3,10 +3,12 @@ docker-compose up -d
 
 docker-compose down
 
-cp genesis.json one/
+cp genesis.json one/genesis/
 
-cp genesis.json two/
+cp genesis.json two/genesis/
 
-cp genesis.json three/
+cp genesis.json three/genesis
 
 cp genesis.json backup/
+
+sudo rm -rf one/data/* two/data/* three/data/*
