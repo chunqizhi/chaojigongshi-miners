@@ -3,7 +3,7 @@ services:
   myEthNode:
     # image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
     # 测试使用
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu-918
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu-update
     container_name: myEthNode
     volumes:
       - ./one/genesis:/genesis
@@ -21,7 +21,7 @@ services:
   myEthOtherNode:
     # image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0
     # 测试使用
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu-918
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:eth-miningPool-1.0-ubuntu-update
     container_name: myEthOtherNode
     volumes:
       - ./two/genesis:/genesis
@@ -39,7 +39,7 @@ services:
   myBtcpoolOtherNode:
     # image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0
     # 测试使用
-    image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0-ubuntu-918
+    image: zfq17876911936/chaojigongshi-ethereum-client-go:btc-miningPool-1.0-ubuntu-update
     container_name: myBtcpoolOtherNode
     volumes:
       - ./three/genesis:/genesis
