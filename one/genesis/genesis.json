@@ -12,7 +12,7 @@
   "alloc"      : {
     "Gst2B2a5067f4dC2981D4339bd839dcD73ef97a892A": { "balance": "2100000000000" }
   },
-  "difficulty" : "Gst40",
-  "gasLimit"   : "Gst7A1200",
-  "timestamp"  : "Gst5F65BA80"
+  "difficulty" : "0x40",
+  "gasLimit"   : "0x7A1200",
+  "timestamp"  : "0x5F65BA80"
 }
